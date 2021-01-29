@@ -37,6 +37,8 @@ dependencies:
   google_fonts: ^1.1.1
   #expansion_card
   expansion_card: ^0.1.0
+  #scratcher card
+  scratcher: ^1.4.0
 
 dev_dependencies:
   flutter_test:

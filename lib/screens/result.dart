@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:scratcher/scratcher.dart';
 
 class Result extends StatefulWidget {
   @override
@@ -55,23 +56,24 @@ class _ResultState extends State<Result> {
           return Padding(
             padding: const EdgeInsets.all(10.0),
             child: Container(
-              height: MediaQuery.of(context).size.height / 5,
+              height: MediaQuery.of(context).size.height / 8,
               width: MediaQuery.of(context).size.width,
-              child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
+              child: PhysicalModel(
+                borderRadius: BorderRadius.circular(15.0),
+                color: Colors.blue[100],
+                shadowColor: Colors.black,
+                elevation: 8,
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: Column(
                     children: [
                       Text(
                         '${toupper(posting)} Elect',
-                        style: TextStyle(fontSize: 25),
+                        style: GoogleFonts.droidSans(fontSize: 25),
                       ),
                       Text(
                         snapshot.data.docs[0]['name'],
-                        style: TextStyle(fontSize: 35),
+                        style: GoogleFonts.songMyung(fontSize: 35),
                       ),
                     ],
                   ),

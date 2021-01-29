@@ -12,6 +12,7 @@ class _treasurerState extends State<treasurer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: buildStreamBuilder(
         'treasurer',
       ),

@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             title: 'VOTER',
             theme: ThemeData.light(),
             darkTheme: ThemeData.dark(),
-            home: Result(),
+            home: SignIn(),
           );
         }
 

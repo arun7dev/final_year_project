@@ -118,6 +118,7 @@ class _buildStreamBuilderState extends State<buildStreamBuilder> {
                                                     ['about'],
                                                 style: GoogleFonts.quicksand(
                                                   fontSize: 17,
+                                                  color: Colors.black,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -131,6 +132,7 @@ class _buildStreamBuilderState extends State<buildStreamBuilder> {
                                                     ['achievement'],
                                                 style: GoogleFonts.quicksand(
                                                   fontSize: 17,
+                                                  color: Colors.black,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
